@@ -1,0 +1,39 @@
+C:\Documents and Settings\aiuju39\my documents\visual studio 2010\Projects\TicketTrack\TicketTrack\bin\Release\TicketTrack.exe.config
+C:\Documents and Settings\aiuju39\my documents\visual studio 2010\Projects\TicketTrack\TicketTrack\bin\Release\TicketTrack.exe
+C:\Documents and Settings\aiuju39\my documents\visual studio 2010\Projects\TicketTrack\TicketTrack\bin\Release\TicketTrack.pdb
+C:\Documents and Settings\aiuju39\my documents\visual studio 2010\Projects\TicketTrack\TicketTrack\bin\Release\TicketTrack.xml
+C:\Documents and Settings\aiuju39\my documents\visual studio 2010\Projects\TicketTrack\TicketTrack\obj\x86\Release\ResolveAssemblyReference.cache
+C:\Documents and Settings\aiuju39\my documents\visual studio 2010\Projects\TicketTrack\TicketTrack\obj\x86\Release\TicketTrack.frmNewEditDiag.resources
+C:\Documents and Settings\aiuju39\my documents\visual studio 2010\Projects\TicketTrack\TicketTrack\obj\x86\Release\TicketTrack.frmTicketMain.resources
+C:\Documents and Settings\aiuju39\my documents\visual studio 2010\Projects\TicketTrack\TicketTrack\obj\x86\Release\TicketTrack.Resources.resources
+C:\Documents and Settings\aiuju39\my documents\visual studio 2010\Projects\TicketTrack\TicketTrack\obj\x86\Release\GenerateResource.read.1.tlog
+C:\Documents and Settings\aiuju39\my documents\visual studio 2010\Projects\TicketTrack\TicketTrack\obj\x86\Release\GenerateResource.write.1.tlog
+C:\Documents and Settings\aiuju39\my documents\visual studio 2010\Projects\TicketTrack\TicketTrack\obj\x86\Release\TicketTrack.exe
+C:\Documents and Settings\aiuju39\my documents\visual studio 2010\Projects\TicketTrack\TicketTrack\obj\x86\Release\TicketTrack.xml
+C:\Documents and Settings\aiuju39\my documents\visual studio 2010\Projects\TicketTrack\TicketTrack\obj\x86\Release\TicketTrack.pdb
+M:\Apps\TicketTrack\TicketTrack\bin\Release\TicketTrack.exe.config
+M:\Apps\TicketTrack\TicketTrack\obj\x86\Release\TicketTrack.exe
+M:\Apps\TicketTrack\TicketTrack\obj\x86\Release\TicketTrack.xml
+M:\Apps\TicketTrack\TicketTrack\obj\x86\Release\TicketTrack.pdb
+M:\Apps\TicketTrack\TicketTrack\bin\Release\TicketTrack.exe
+M:\Apps\TicketTrack\TicketTrack\bin\Release\TicketTrack.pdb
+M:\Apps\TicketTrack\TicketTrack\bin\Release\TicketTrack.xml
+M:\Apps\TicketTrack\TicketTrack\obj\x86\Release\ResolveAssemblyReference.cache
+M:\Apps\TicketTrack\TicketTrack\obj\x86\Release\TicketTrack.frmNewEditDiag.resources
+M:\Apps\TicketTrack\TicketTrack\obj\x86\Release\TicketTrack.frmTicketMain.resources
+M:\Apps\TicketTrack\TicketTrack\obj\x86\Release\TicketTrack.Resources.resources
+M:\Apps\TicketTrack\TicketTrack\obj\x86\Release\GenerateResource.read.1.tlog
+M:\Apps\TicketTrack\TicketTrack\obj\x86\Release\GenerateResource.write.1.tlog
+M:\Apps\TicketTrack\TicketTrack\bin\Release\TicketTrack.exe.manifest
+M:\Apps\TicketTrack\TicketTrack\bin\Release\TicketTrack.application
+M:\Apps\TicketTrack\TicketTrack\obj\x86\Release\TicketTrack.TrustInfo.xml
+M:\Apps\TicketTrack\TicketTrack\obj\x86\Release\TicketTrack.exe.manifest
+M:\Apps\TicketTrack\TicketTrack\obj\x86\Release\TicketTrack.application
+C:\Documents and Settings\aiuju39\My Documents\Visual Studio 2010\Projects\TicketTrack\TicketTrack\bin\Release\TicketTrack.exe.manifest
+C:\Documents and Settings\aiuju39\My Documents\Visual Studio 2010\Projects\TicketTrack\TicketTrack\bin\Release\TicketTrack.application
+C:\Documents and Settings\aiuju39\My Documents\Visual Studio 2010\Projects\TicketTrack\TicketTrack\obj\x86\Release\TicketTrack.TrustInfo.xml
+C:\Documents and Settings\aiuju39\My Documents\Visual Studio 2010\Projects\TicketTrack\TicketTrack\obj\x86\Release\TicketTrack.exe.manifest
+C:\Documents and Settings\aiuju39\My Documents\Visual Studio 2010\Projects\TicketTrack\TicketTrack\obj\x86\Release\TicketTrack.application
+C:\Documents and Settings\aiuju39\My Documents\Visual Studio 2010\Projects\TicketTrack\TicketTrack\bin\Release\dbTicket.sdf
+C:\Documents and Settings\aiuju39\My Documents\Visual Studio 2010\Projects\TicketTrack\TicketTrack\obj\x86\Release\TicketTrack.frmNewEditArchive.resources
+C:\Documents and Settings\aiuju39\My Documents\Visual Studio 2010\Projects\TicketTrack\TicketTrack\obj\x86\Release\TicketTrack.frmTicketArchive.resources

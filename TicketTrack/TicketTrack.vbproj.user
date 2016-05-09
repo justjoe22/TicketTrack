@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PublishUrlHistory>Q:\CMN8450\ServiceDesk\TicketTrack\|Q:\CMN8450\ServiceDesk\TicketTrackDEV\|R:\Alticor\It\ETS\Service Desk\TicketTrack\|http://localhost/TicketTrack/</PublishUrlHistory>
+    <InstallUrlHistory />
+    <SupportUrlHistory />
+    <UpdateUrlHistory>\\na.intranet.msd\fsroot\Public\CMN8450\ServiceDesk\TicketTrack\|\\na.intranet.msd\fsroot\Alticor\It\ETS\Service Desk\TicketTrack\|\\na.intranet.msd\fsroot\alticor\it\ets\service desk\tickettrack\</UpdateUrlHistory>
+    <BootstrapperUrlHistory>Q:\CMN8450\ServiceDesk\TicketTrack\|R:\Alticor\It\ETS\Service Desk\TicketTrack</BootstrapperUrlHistory>
+    <ErrorReportUrlHistory />
+    <FallbackCulture>en-US</FallbackCulture>
+    <VerifyUploadedFiles>true</VerifyUploadedFiles>
+  </PropertyGroup>
+</Project>

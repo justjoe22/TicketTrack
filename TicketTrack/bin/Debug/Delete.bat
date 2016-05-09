@@ -1,0 +1,1 @@
+if exist TicketTrack.exe del TicketTrack.exe
