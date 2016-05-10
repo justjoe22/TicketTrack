@@ -26,7 +26,7 @@
         '
         '    Version.Text = System.String.Format(Version.Text, My.Application.Info.Version.Major, My.Application.Info.Version.Minor, My.Application.Info.Version.Build, My.Application.Info.Version.Revision)
 
-        Version.Text = Version.Text + " " + My.Application.Deployment.CurrentVersion.ToString
+        'Version.Text = Version.Text + " " + My.Application.Deployment.CurrentVersion.ToString
 
         'Copyright info
         Copyright.Text = My.Application.Info.Copyright

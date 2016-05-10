@@ -193,6 +193,7 @@
       <SubType>Designer</SubType>
     </None>
     <None Include="ClassDiagram3.cd" />
+    <None Include="ClassDiagram4.cd" />
     <None Include="dbTicketSQLds.xsc">
       <DependentUpon>dbTicketSQLds.xsd</DependentUpon>
     </None>

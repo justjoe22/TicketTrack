@@ -70,5 +70,3 @@ C:\Users\AIUJU39\Documents\Visual Studio 2015\Projects\TicketTrack\TicketTrack\o
 C:\Users\AIUJU39\Documents\Visual Studio 2015\Projects\TicketTrack\TicketTrack\obj\x86\Debug\TicketTrack.exe
 C:\Users\AIUJU39\Documents\Visual Studio 2015\Projects\TicketTrack\TicketTrack\obj\x86\Debug\TicketTrack.xml
 C:\Users\AIUJU39\Documents\Visual Studio 2015\Projects\TicketTrack\TicketTrack\obj\x86\Debug\TicketTrack.pdb
-C:\Users\AIUJU39\Documents\Visual Studio 2015\Projects\TicketTrack\TicketTrack\bin\Debug\TicketTrack.exe.CodeAnalysisLog.xml
-C:\Users\AIUJU39\Documents\Visual Studio 2015\Projects\TicketTrack\TicketTrack\bin\Debug\TicketTrack.exe.lastcodeanalysissucceeded
