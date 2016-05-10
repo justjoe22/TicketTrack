@@ -43,14 +43,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="TicketTrack.exe" size="178688">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="TicketTrack.exe" size="177664">
       <assemblyIdentity name="TicketTrack" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>xxZSJD2RQDQTnGnm9nUe//mzjEM=</dsig:DigestValue>
+        <dsig:DigestValue>vf39hyyqyoPk1JDwqlztsYihrb0=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

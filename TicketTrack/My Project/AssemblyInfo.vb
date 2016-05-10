@@ -13,7 +13,7 @@ Imports System.Runtime.InteropServices
 <Assembly: AssemblyCompany("Amway, Inc")> 
 <Assembly: AssemblyProduct("TicketTrack")> 
 <Assembly: AssemblyCopyright("Copyright © Amway, Inc 2014")> 
-<Assembly: AssemblyTrademark("")> 
+<Assembly: AssemblyTrademark("")>
 
 <Assembly: ComVisible(False)>
 

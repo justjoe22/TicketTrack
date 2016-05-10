@@ -97,6 +97,7 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
@@ -114,6 +115,7 @@
     <Import Include="System.Data" />
     <Import Include="System.Drawing" />
     <Import Include="System.Diagnostics" />
+    <Import Include="System.Runtime.Serialization" />
     <Import Include="System.Windows.Forms" />
     <Import Include="System.Linq" />
     <Import Include="System.Xml.Linq" />
@@ -169,7 +171,6 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
     <Compile Include="Settings.vb" />
-    <Compile Include="vbSQLConnect.vb" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="frmNotes.resx">
@@ -192,15 +193,13 @@
     <None Include="app.config">
       <SubType>Designer</SubType>
     </None>
-    <None Include="ClassDiagram3.cd" />
-    <None Include="ClassDiagram4.cd" />
     <None Include="dbTicketSQLds.xsc">
       <DependentUpon>dbTicketSQLds.xsd</DependentUpon>
     </None>
     <None Include="dbTicketSQLds.xsd">
+      <SubType>Designer</SubType>
       <Generator>MSDataSetGenerator</Generator>
       <LastGenOutput>dbTicketSQLds.Designer.vb</LastGenOutput>
-      <SubType>Designer</SubType>
     </None>
     <None Include="dbTicketSQLds.xss">
       <DependentUpon>dbTicketSQLds.xsd</DependentUpon>
@@ -218,7 +217,6 @@
     <None Include="TicketTrack_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="appverif.ico" />
     <SplashScreen Include="Resources\splashicon.png" />
     <Content Include="Visualpharm-Icons8-Metro-Style-Data-Ticket.ico" />
   </ItemGroup>
@@ -248,16 +246,6 @@
     <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <ItemGroup>
-    <PublishFile Include="appverif.ico">
-      <Visible>False</Visible>
-      <Group>
-      </Group>
-      <TargetPath>
-      </TargetPath>
-      <PublishState>Exclude</PublishState>
-      <IncludeHash>True</IncludeHash>
-      <FileType>File</FileType>
-    </PublishFile>
     <PublishFile Include="TicketTrack">
       <Visible>False</Visible>
       <Group>
@@ -265,7 +253,7 @@
       <TargetPath>
       </TargetPath>
       <PublishState>Exclude</PublishState>
-      <IncludeHash>True</IncludeHash>
+      <IncludeHash>False</IncludeHash>
       <FileType>Assembly</FileType>
     </PublishFile>
   </ItemGroup>
