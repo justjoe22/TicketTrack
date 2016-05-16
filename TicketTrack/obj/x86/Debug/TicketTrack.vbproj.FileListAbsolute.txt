@@ -71,3 +71,4 @@ C:\Users\AIUJU39\Documents\Visual Studio 2015\Projects\TicketTrack\TicketTrack\o
 C:\Users\AIUJU39\Documents\Visual Studio 2015\Projects\TicketTrack\TicketTrack\obj\x86\Debug\TicketTrack.xml
 C:\Users\AIUJU39\Documents\Visual Studio 2015\Projects\TicketTrack\TicketTrack\obj\x86\Debug\TicketTrack.pdb
 C:\Users\AIUJU39\Documents\Visual Studio 2015\Projects\TicketTrack\TicketTrack\obj\x86\Debug\TicketTrack.frmTicket_SQL_R1.resources
+C:\Users\AIUJU39\Documents\Visual Studio 2015\Projects\TicketTrack\TicketTrack\obj\x86\Debug\TicketTrack.frmTicket_SQL_R2.resources

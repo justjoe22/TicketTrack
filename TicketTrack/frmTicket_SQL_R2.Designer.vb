@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class frmTicket_SQL_R1
+Partial Class frmTicket_SQL_R2
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -22,18 +22,15 @@ Partial Class frmTicket_SQL_R1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmTicket_SQL_R1))
         Me.SuspendLayout()
         '
-        'frmTicket_SQL_R1
+        'frmTicket_SQL_R2
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(818, 157)
-        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
-        Me.MinimumSize = New System.Drawing.Size(834, 196)
-        Me.Name = "frmTicket_SQL_R1"
-        Me.Text = "TicketTrack"
+        Me.ClientSize = New System.Drawing.Size(599, 261)
+        Me.Name = "frmTicket_SQL_R2"
+        Me.Text = "frmTicket_SQL_R2"
         Me.ResumeLayout(False)
 
     End Sub
