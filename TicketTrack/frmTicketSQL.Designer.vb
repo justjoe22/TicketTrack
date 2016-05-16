@@ -33,13 +33,13 @@ Partial Class frmTicketSQL
         Me.mnuCopy = New System.Windows.Forms.ToolStripMenuItem()
         Me.mnuDelete = New System.Windows.Forms.ToolStripMenuItem()
         Me.TblTicketBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.DbTicketSQLds = New TicketTrack.dbTicketSQLds()
+        Me.DbTicketSQLds = New Global.TicketTrack.dbTicketSQLds()
         Me.cmbView = New System.Windows.Forms.ComboBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.time_track = New System.Windows.Forms.Timer(Me.components)
         Me.btnRefresh = New System.Windows.Forms.Button()
-        Me.ITT00501_PT_TICKT_MSTTableAdapter = New TicketTrack.dbTicketSQLdsTableAdapters.ITT00501_PT_TICKT_MSTTableAdapter()
-        Me.TableAdapterManager = New TicketTrack.dbTicketSQLdsTableAdapters.TableAdapterManager()
+        Me.ITT00501_PT_TICKT_MSTTableAdapter = New Global.TicketTrack.dbTicketSQLdsTableAdapters.ITT00501_PT_TICKT_MSTTableAdapter()
+        Me.TableAdapterManager = New Global.TicketTrack.dbTicketSQLdsTableAdapters.TableAdapterManager()
         Me.txtRecordCt = New System.Windows.Forms.TextBox()
         Me.ITT00501PTTICKTMSTBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.Label2 = New System.Windows.Forms.Label()
@@ -177,7 +177,7 @@ Partial Class frmTicketSQL
         '
         Me.TableAdapterManager.BackupDataSetBeforeUpdate = False
         Me.TableAdapterManager.ITT00501_PT_TICKT_MSTTableAdapter = Me.ITT00501_PT_TICKT_MSTTableAdapter
-        Me.TableAdapterManager.UpdateOrder = TicketTrack.dbTicketSQLdsTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
+        Me.TableAdapterManager.UpdateOrder = Global.TicketTrack.dbTicketSQLdsTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
         '
         'txtRecordCt
         '
@@ -316,9 +316,9 @@ Partial Class frmTicketSQL
     Friend WithEvents time_track As System.Windows.Forms.Timer
     Friend WithEvents mnuDelete As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents btnRefresh As System.Windows.Forms.Button
-    Friend WithEvents ITT00501_PT_TICKT_MSTTableAdapter As TicketTrack.dbTicketSQLdsTableAdapters.ITT00501_PT_TICKT_MSTTableAdapter
-    Friend WithEvents DbTicketSQLds As TicketTrack.dbTicketSQLds
-    Friend WithEvents TableAdapterManager As TicketTrack.dbTicketSQLdsTableAdapters.TableAdapterManager
+    Friend WithEvents ITT00501_PT_TICKT_MSTTableAdapter As Global.TicketTrack.dbTicketSQLdsTableAdapters.ITT00501_PT_TICKT_MSTTableAdapter
+    Friend WithEvents DbTicketSQLds As Global.TicketTrack.dbTicketSQLds
+    Friend WithEvents TableAdapterManager As Global.TicketTrack.dbTicketSQLdsTableAdapters.TableAdapterManager
     Friend WithEvents txtRecordCt As System.Windows.Forms.TextBox
     Friend WithEvents ITT00501PTTICKTMSTBindingSource As System.Windows.Forms.BindingSource
     Friend WithEvents Label2 As System.Windows.Forms.Label

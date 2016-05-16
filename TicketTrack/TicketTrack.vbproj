@@ -150,6 +150,12 @@
     <Compile Include="frmTicketSQL.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="frmTicket_SQL_R1.Designer.vb">
+      <DependentUpon>frmTicket_SQL_R1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTicket_SQL_R1.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Menu.Designer.vb">
       <DependentUpon>Menu.vb</DependentUpon>
     </Compile>
@@ -182,6 +188,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmTicketSQL.resx">
       <DependentUpon>frmTicketSQL.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTicket_SQL_R1.resx">
+      <DependentUpon>frmTicket_SQL_R1.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
