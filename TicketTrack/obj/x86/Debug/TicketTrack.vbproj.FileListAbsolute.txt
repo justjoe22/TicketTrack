@@ -62,6 +62,7 @@ C:\Users\AIUJU39\Documents\Visual Studio 2015\Projects\TicketTrack\TicketTrack\o
 C:\Users\AIUJU39\Documents\Visual Studio 2015\Projects\TicketTrack\TicketTrack\obj\x86\Debug\TicketTrack.frmNotes.resources
 C:\Users\AIUJU39\Documents\Visual Studio 2015\Projects\TicketTrack\TicketTrack\obj\x86\Debug\TicketTrack.frmSplash.resources
 C:\Users\AIUJU39\Documents\Visual Studio 2015\Projects\TicketTrack\TicketTrack\obj\x86\Debug\TicketTrack.frmTicketSQL.resources
+C:\Users\AIUJU39\Documents\Visual Studio 2015\Projects\TicketTrack\TicketTrack\obj\x86\Debug\TicketTrack.frmTicket_SQL_R2.resources
 C:\Users\AIUJU39\Documents\Visual Studio 2015\Projects\TicketTrack\TicketTrack\obj\x86\Debug\TicketTrack.Resources.resources
 C:\Users\AIUJU39\Documents\Visual Studio 2015\Projects\TicketTrack\TicketTrack\obj\x86\Debug\TicketTrack.vbproj.GenerateResource.Cache
 C:\Users\AIUJU39\Documents\Visual Studio 2015\Projects\TicketTrack\TicketTrack\obj\x86\Debug\TicketTrack.TrustInfo.xml
@@ -70,4 +71,3 @@ C:\Users\AIUJU39\Documents\Visual Studio 2015\Projects\TicketTrack\TicketTrack\o
 C:\Users\AIUJU39\Documents\Visual Studio 2015\Projects\TicketTrack\TicketTrack\obj\x86\Debug\TicketTrack.exe
 C:\Users\AIUJU39\Documents\Visual Studio 2015\Projects\TicketTrack\TicketTrack\obj\x86\Debug\TicketTrack.xml
 C:\Users\AIUJU39\Documents\Visual Studio 2015\Projects\TicketTrack\TicketTrack\obj\x86\Debug\TicketTrack.pdb
-C:\Users\AIUJU39\Documents\Visual Studio 2015\Projects\TicketTrack\TicketTrack\obj\x86\Debug\TicketTrack.frmTicket_SQL_R2.resources

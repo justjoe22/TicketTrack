@@ -99,6 +99,7 @@
     <Reference Include="System.Deployment" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Web.Services" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
@@ -131,6 +132,14 @@
     </Compile>
     <Compile Include="dbTicketSQLds.vb">
       <DependentUpon>dbTicketSQLds.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dbTickets_sql_ds.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dbTickets_sql_ds.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dbTickets_sql_ds.vb">
+      <DependentUpon>dbTickets_sql_ds.xsd</DependentUpon>
     </Compile>
     <Compile Include="frmNotes.Designer.vb">
       <DependentUpon>frmNotes.vb</DependentUpon>
@@ -213,6 +222,17 @@
     </None>
     <None Include="dbTicketSQLds.xss">
       <DependentUpon>dbTicketSQLds.xsd</DependentUpon>
+    </None>
+    <None Include="dbTickets_sql_ds.xsc">
+      <DependentUpon>dbTickets_sql_ds.xsd</DependentUpon>
+    </None>
+    <None Include="dbTickets_sql_ds.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dbTickets_sql_ds.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="dbTickets_sql_ds.xss">
+      <DependentUpon>dbTickets_sql_ds.xsd</DependentUpon>
     </None>
     <None Include="My Project\app.manifest" />
     <None Include="My Project\Application.myapp">

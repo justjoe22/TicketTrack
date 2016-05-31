@@ -33,13 +33,13 @@ Partial Class frmTicketSQL
         Me.mnuCopy = New System.Windows.Forms.ToolStripMenuItem()
         Me.mnuDelete = New System.Windows.Forms.ToolStripMenuItem()
         Me.TblTicketBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.DbTicketSQLds = New Global.TicketTrack.dbTicketSQLds()
+        Me.dbTickets_sql_ds = New Global.TicketTrack.dbTickets_sql_ds()
         Me.cmbView = New System.Windows.Forms.ComboBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.time_track = New System.Windows.Forms.Timer(Me.components)
         Me.btnRefresh = New System.Windows.Forms.Button()
-        Me.ITT00501_PT_TICKT_MSTTableAdapter = New Global.TicketTrack.dbTicketSQLdsTableAdapters.ITT00501_PT_TICKT_MSTTableAdapter()
-        Me.TableAdapterManager = New Global.TicketTrack.dbTicketSQLdsTableAdapters.TableAdapterManager()
+        Me.ITT00501_PT_TICKT_MSTTableAdapter = New Global.TicketTrack.dbTickets_sql_dsTableAdapters.ITT00501_PT_TICKT_MSTTableAdapter()
+        Me.TableAdapterManager = New Global.TicketTrack.dbTickets_sql_dsTableAdapters.TableAdapterManager()
         Me.txtRecordCt = New System.Windows.Forms.TextBox()
         Me.ITT00501PTTICKTMSTBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.Label2 = New System.Windows.Forms.Label()
@@ -55,7 +55,7 @@ Partial Class frmTicketSQL
         CType(Me.dgSQL, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.CopyMenu.SuspendLayout()
         CType(Me.TblTicketBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.DbTicketSQLds, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.dbTickets_sql_ds, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ITT00501PTTICKTMSTBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -65,8 +65,8 @@ Partial Class frmTicketSQL
         DataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black
         Me.dgSQL.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
         Me.dgSQL.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+           Or System.Windows.Forms.AnchorStyles.Left) _
+           Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.dgSQL.AutoGenerateColumns = False
         Me.dgSQL.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.ColumnHeader
         Me.dgSQL.BorderStyle = System.Windows.Forms.BorderStyle.None
@@ -128,13 +128,13 @@ Partial Class frmTicketSQL
         'TblTicketBindingSource
         '
         Me.TblTicketBindingSource.DataMember = "ITT00501_PT_TICKT_MST"
-        Me.TblTicketBindingSource.DataSource = Me.DbTicketSQLds
+        Me.TblTicketBindingSource.DataSource = Me.dbTickets_sql_ds
         '
-        'DbTicketSQLds
+        'dbTickets_sql_ds
         '
-        Me.DbTicketSQLds.DataSetName = "dbTicketSQLds"
-        Me.DbTicketSQLds.EnforceConstraints = False
-        Me.DbTicketSQLds.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        Me.dbTickets_sql_ds.DataSetName = "dbTickets_sql_ds"
+        Me.dbTickets_sql_ds.EnforceConstraints = False
+        Me.dbTickets_sql_ds.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
         'cmbView
         '
@@ -177,7 +177,7 @@ Partial Class frmTicketSQL
         '
         Me.TableAdapterManager.BackupDataSetBeforeUpdate = False
         Me.TableAdapterManager.ITT00501_PT_TICKT_MSTTableAdapter = Me.ITT00501_PT_TICKT_MSTTableAdapter
-        Me.TableAdapterManager.UpdateOrder = Global.TicketTrack.dbTicketSQLdsTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
+        Me.TableAdapterManager.UpdateOrder = Global.TicketTrack.dbTickets_sql_dsTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
         '
         'txtRecordCt
         '
@@ -197,7 +197,7 @@ Partial Class frmTicketSQL
         'ITT00501PTTICKTMSTBindingSource
         '
         Me.ITT00501PTTICKTMSTBindingSource.DataMember = "ITT00501_PT_TICKT_MST"
-        Me.ITT00501PTTICKTMSTBindingSource.DataSource = Me.DbTicketSQLds
+        Me.ITT00501PTTICKTMSTBindingSource.DataSource = Me.dbTickets_sql_ds
         '
         'Label2
         '
@@ -301,7 +301,7 @@ Partial Class frmTicketSQL
         CType(Me.dgSQL, System.ComponentModel.ISupportInitialize).EndInit()
         Me.CopyMenu.ResumeLayout(False)
         CType(Me.TblTicketBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.DbTicketSQLds, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.dbTickets_sql_ds, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.ITT00501PTTICKTMSTBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
@@ -316,9 +316,9 @@ Partial Class frmTicketSQL
     Friend WithEvents time_track As System.Windows.Forms.Timer
     Friend WithEvents mnuDelete As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents btnRefresh As System.Windows.Forms.Button
-    Friend WithEvents ITT00501_PT_TICKT_MSTTableAdapter As Global.TicketTrack.dbTicketSQLdsTableAdapters.ITT00501_PT_TICKT_MSTTableAdapter
-    Friend WithEvents DbTicketSQLds As Global.TicketTrack.dbTicketSQLds
-    Friend WithEvents TableAdapterManager As Global.TicketTrack.dbTicketSQLdsTableAdapters.TableAdapterManager
+    Friend WithEvents ITT00501_PT_TICKT_MSTTableAdapter As Global.TicketTrack.dbTickets_sql_dsTableAdapters.ITT00501_PT_TICKT_MSTTableAdapter
+    Friend WithEvents dbTickets_sql_ds As Global.TicketTrack.dbTickets_sql_ds
+    Friend WithEvents TableAdapterManager As Global.TicketTrack.dbTickets_sql_dsTableAdapters.TableAdapterManager
     Friend WithEvents txtRecordCt As System.Windows.Forms.TextBox
     Friend WithEvents ITT00501PTTICKTMSTBindingSource As System.Windows.Forms.BindingSource
     Friend WithEvents Label2 As System.Windows.Forms.Label
