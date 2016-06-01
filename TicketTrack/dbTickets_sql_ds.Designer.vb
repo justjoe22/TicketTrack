@@ -27,7 +27,7 @@ Partial Public Class dbTickets_sql_ds
     
     Private tableITT00501_PT_TICKT_MST As ITT00501_PT_TICKT_MSTDataTable
     
-    Private _schemaSerializationMode As Global.System.Data.SchemaSerializationMode = Global.System.Data.SchemaSerializationMode.IncludeSchema
+    Private _schemaSerializationMode As Global.System.Data.SchemaSerializationMode = Global.System.Data.SchemaSerializationMode.ExcludeSchema
     
     <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
      Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
@@ -203,7 +203,7 @@ Partial Public Class dbTickets_sql_ds
         Me.Prefix = ""
         Me.Namespace = "http://tempuri.org/dbTickets_sql_ds.xsd"
         Me.EnforceConstraints = true
-        Me.SchemaSerializationMode = Global.System.Data.SchemaSerializationMode.IncludeSchema
+        Me.SchemaSerializationMode = Global.System.Data.SchemaSerializationMode.ExcludeSchema
         Me.tableITT00501_PT_TICKT_MST = New ITT00501_PT_TICKT_MSTDataTable()
         MyBase.Tables.Add(Me.tableITT00501_PT_TICKT_MST)
     End Sub
