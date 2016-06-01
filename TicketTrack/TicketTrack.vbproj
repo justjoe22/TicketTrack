@@ -40,7 +40,7 @@
     <BootstrapperComponentsUrl>Q:\CMN8450\ServiceDesk\TicketTrack\</BootstrapperComponentsUrl>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
+    <PlatformTarget>x86</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <DefineDebug>true</DefineDebug>
@@ -133,11 +133,6 @@
     <Compile Include="dbTicketSQLds.vb">
       <DependentUpon>dbTicketSQLds.xsd</DependentUpon>
     </Compile>
-    <Compile Include="dbTickets_sql_ds.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>dbTickets_sql_ds.xsd</DependentUpon>
-    </Compile>
     <Compile Include="dbTickets_sql_ds.vb">
       <DependentUpon>dbTickets_sql_ds.xsd</DependentUpon>
     </Compile>
@@ -164,6 +159,11 @@
     </Compile>
     <Compile Include="frmTicket_SQL_R2.vb">
       <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dbTickets_sql_ds.Designer.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dbTickets_sql_ds.Designer.vb</DependentUpon>
     </Compile>
     <Compile Include="Menu.Designer.vb">
       <DependentUpon>Menu.vb</DependentUpon>
@@ -228,11 +228,20 @@
     </None>
     <None Include="dbTickets_sql_ds.xsd">
       <SubType>Designer</SubType>
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>dbTickets_sql_ds.Designer.vb</LastGenOutput>
     </None>
     <None Include="dbTickets_sql_ds.xss">
       <DependentUpon>dbTickets_sql_ds.xsd</DependentUpon>
+    </None>
+    <None Include="ITB00500_PT_TICKT_TRACK_APPDataSet.xsc">
+      <DependentUpon>dbTickets_sql_ds.Designer.vb</DependentUpon>
+    </None>
+    <Compile Include="dbTickets_sql_ds.Designer.vb">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dbTickets_sql_ds.Designer.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Compile>
+    <None Include="ITB00500_PT_TICKT_TRACK_APPDataSet.xss">
+      <DependentUpon>dbTickets_sql_ds.Designer.vb</DependentUpon>
     </None>
     <None Include="My Project\app.manifest" />
     <None Include="My Project\Application.myapp">
