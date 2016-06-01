@@ -48,7 +48,6 @@
     <OutputPath>bin\Debug\</OutputPath>
     <DocumentationFile>TicketTrack.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
-    <UseVSHostingProcess>true</UseVSHostingProcess>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
     <PlatformTarget>x86</PlatformTarget>
@@ -98,8 +97,6 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
     <Reference Include="System.Drawing" />
-    <Reference Include="System.Runtime.Serialization" />
-    <Reference Include="System.Web.Services" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
@@ -117,7 +114,6 @@
     <Import Include="System.Data" />
     <Import Include="System.Drawing" />
     <Import Include="System.Diagnostics" />
-    <Import Include="System.Runtime.Serialization" />
     <Import Include="System.Windows.Forms" />
     <Import Include="System.Linq" />
     <Import Include="System.Xml.Linq" />
@@ -132,9 +128,6 @@
     </Compile>
     <Compile Include="dbTicketSQLds.vb">
       <DependentUpon>dbTicketSQLds.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="dbTickets_sql_ds.vb">
-      <DependentUpon>dbTickets_sql_ds.xsd</DependentUpon>
     </Compile>
     <Compile Include="frmNotes.Designer.vb">
       <DependentUpon>frmNotes.vb</DependentUpon>
@@ -153,17 +146,6 @@
     </Compile>
     <Compile Include="frmTicketSQL.vb">
       <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmTicket_SQL_R2.Designer.vb">
-      <DependentUpon>frmTicket_SQL_R2.vb</DependentUpon>
-    </Compile>
-    <Compile Include="frmTicket_SQL_R2.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="dbTickets_sql_ds.Designer.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>dbTickets_sql_ds.Designer.vb</DependentUpon>
     </Compile>
     <Compile Include="Menu.Designer.vb">
       <DependentUpon>Menu.vb</DependentUpon>
@@ -187,6 +169,7 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
     <Compile Include="Settings.vb" />
+    <Compile Include="vbSQLConnect.vb" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="frmNotes.resx">
@@ -197,9 +180,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmTicketSQL.resx">
       <DependentUpon>frmTicketSQL.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmTicket_SQL_R2.resx">
-      <DependentUpon>frmTicket_SQL_R2.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
@@ -216,32 +196,12 @@
       <DependentUpon>dbTicketSQLds.xsd</DependentUpon>
     </None>
     <None Include="dbTicketSQLds.xsd">
-      <SubType>Designer</SubType>
       <Generator>MSDataSetGenerator</Generator>
       <LastGenOutput>dbTicketSQLds.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
     </None>
     <None Include="dbTicketSQLds.xss">
       <DependentUpon>dbTicketSQLds.xsd</DependentUpon>
-    </None>
-    <None Include="dbTickets_sql_ds.xsc">
-      <DependentUpon>dbTickets_sql_ds.xsd</DependentUpon>
-    </None>
-    <None Include="dbTickets_sql_ds.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="dbTickets_sql_ds.xss">
-      <DependentUpon>dbTickets_sql_ds.xsd</DependentUpon>
-    </None>
-    <None Include="ITB00500_PT_TICKT_TRACK_APPDataSet.xsc">
-      <DependentUpon>dbTickets_sql_ds.Designer.vb</DependentUpon>
-    </None>
-    <Compile Include="dbTickets_sql_ds.Designer.vb">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>dbTickets_sql_ds.Designer.Designer.vb</LastGenOutput>
-      <SubType>Designer</SubType>
-    </Compile>
-    <None Include="ITB00500_PT_TICKT_TRACK_APPDataSet.xss">
-      <DependentUpon>dbTickets_sql_ds.Designer.vb</DependentUpon>
     </None>
     <None Include="My Project\app.manifest" />
     <None Include="My Project\Application.myapp">
@@ -256,6 +216,7 @@
     <None Include="TicketTrack_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="appverif.ico" />
     <SplashScreen Include="Resources\splashicon.png" />
     <Content Include="Visualpharm-Icons8-Metro-Style-Data-Ticket.ico" />
   </ItemGroup>
@@ -285,6 +246,16 @@
     <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <ItemGroup>
+    <PublishFile Include="appverif.ico">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
     <PublishFile Include="TicketTrack">
       <Visible>False</Visible>
       <Group>
@@ -292,7 +263,7 @@
       <TargetPath>
       </TargetPath>
       <PublishState>Exclude</PublishState>
-      <IncludeHash>False</IncludeHash>
+      <IncludeHash>True</IncludeHash>
       <FileType>Assembly</FileType>
     </PublishFile>
   </ItemGroup>
