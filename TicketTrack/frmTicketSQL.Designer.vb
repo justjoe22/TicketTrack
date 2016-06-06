@@ -32,16 +32,16 @@ Partial Class frmTicketSQL
         Me.CopyMenu = New System.Windows.Forms.ContextMenuStrip(Me.components)
         Me.mnuCopy = New System.Windows.Forms.ToolStripMenuItem()
         Me.mnuDelete = New System.Windows.Forms.ToolStripMenuItem()
-        Me.TblTicketBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.DbTicketSQLds = New TicketTrack.dbTicketSQLds()
+        'Me.TblTicketBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        'Me.DbTicketSQLds = New TicketTrack.dbTicketSQLds()
         Me.cmbView = New System.Windows.Forms.ComboBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.time_track = New System.Windows.Forms.Timer(Me.components)
         Me.btnRefresh = New System.Windows.Forms.Button()
-        Me.ITT00501_PT_TICKT_MSTTableAdapter = New TicketTrack.dbTicketSQLdsTableAdapters.ITT00501_PT_TICKT_MSTTableAdapter()
-        Me.TableAdapterManager = New TicketTrack.dbTicketSQLdsTableAdapters.TableAdapterManager()
+        'Me.ITT00501_PT_TICKT_MSTTableAdapter = New TicketTrack.dbTicketSQLdsTableAdapters.ITT00501_PT_TICKT_MSTTableAdapter()
+        'Me.TableAdapterManager = New TicketTrack.dbTicketSQLdsTableAdapters.TableAdapterManager()
         Me.txtRecordCt = New System.Windows.Forms.TextBox()
-        Me.ITT00501PTTICKTMSTBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        'Me.ITT00501PTTICKTMSTBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.INCDNTIDDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -54,9 +54,9 @@ Partial Class frmTicketSQL
         Me.CREATDTMDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         CType(Me.dgSQL, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.CopyMenu.SuspendLayout()
-        CType(Me.TblTicketBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.DbTicketSQLds, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.ITT00501PTTICKTMSTBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        'CType(Me.TblTicketBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        'CType(Me.DbTicketSQLds, System.ComponentModel.ISupportInitialize).BeginInit()
+        'CType(Me.ITT00501PTTICKTMSTBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'dgSQL
@@ -81,7 +81,7 @@ Partial Class frmTicketSQL
         Me.dgSQL.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
         Me.dgSQL.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.INCDNTIDDataGridViewTextBoxColumn, Me.SUMMDESCDataGridViewTextBoxColumn, Me.ASSGNIDDataGridViewTextBoxColumn, Me.RLATETXTDataGridViewTextBoxColumn, Me.NOTEDESCDataGridViewTextBoxColumn, Me.FIXFLGDataGridViewCheckBoxColumn, Me.CMPLTFLGDataGridViewCheckBoxColumn, Me.CREATDTMDataGridViewTextBoxColumn})
         Me.dgSQL.ContextMenuStrip = Me.CopyMenu
-        Me.dgSQL.DataSource = Me.TblTicketBindingSource
+        'Me.dgSQL.DataSource = Me.TblTicketBindingSource
         DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
         DataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window
         DataGridViewCellStyle3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -127,14 +127,14 @@ Partial Class frmTicketSQL
         '
         'TblTicketBindingSource
         '
-        Me.TblTicketBindingSource.DataMember = "ITT00501_PT_TICKT_MST"
-        Me.TblTicketBindingSource.DataSource = Me.DbTicketSQLds
+        'Me.TblTicketBindingSource.DataMember = "ITT00501_PT_TICKT_MST"
+        'Me.TblTicketBindingSource.DataSource = Me.DbTicketSQLds
         '
         'DbTicketSQLds
         '
-        Me.DbTicketSQLds.DataSetName = "dbTicketSQLds"
-        Me.DbTicketSQLds.EnforceConstraints = False
-        Me.DbTicketSQLds.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        'Me.DbTicketSQLds.DataSetName = "dbTicketSQLds"
+        'Me.DbTicketSQLds.EnforceConstraints = False
+        'Me.DbTicketSQLds.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
         'cmbView
         '
@@ -171,13 +171,13 @@ Partial Class frmTicketSQL
         '
         'ITT00501_PT_TICKT_MSTTableAdapter
         '
-        Me.ITT00501_PT_TICKT_MSTTableAdapter.ClearBeforeFill = True
+        'Me.ITT00501_PT_TICKT_MSTTableAdapter.ClearBeforeFill = True
         '
         'TableAdapterManager
         '
-        Me.TableAdapterManager.BackupDataSetBeforeUpdate = False
-        Me.TableAdapterManager.ITT00501_PT_TICKT_MSTTableAdapter = Me.ITT00501_PT_TICKT_MSTTableAdapter
-        Me.TableAdapterManager.UpdateOrder = TicketTrack.dbTicketSQLdsTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
+        'Me.TableAdapterManager.BackupDataSetBeforeUpdate = False
+        ' Me.TableAdapterManager.ITT00501_PT_TICKT_MSTTableAdapter = Me.ITT00501_PT_TICKT_MSTTableAdapter
+        'Me.TableAdapterManager.UpdateOrder = TicketTrack.dbTicketSQLdsTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
         '
         'txtRecordCt
         '
@@ -196,8 +196,8 @@ Partial Class frmTicketSQL
         '
         'ITT00501PTTICKTMSTBindingSource
         '
-        Me.ITT00501PTTICKTMSTBindingSource.DataMember = "ITT00501_PT_TICKT_MST"
-        Me.ITT00501PTTICKTMSTBindingSource.DataSource = Me.DbTicketSQLds
+        'Me.ITT00501PTTICKTMSTBindingSource.DataMember = "ITT00501_PT_TICKT_MST"
+        'Me.ITT00501PTTICKTMSTBindingSource.DataSource = Me.DbTicketSQLds
         '
         'Label2
         '
@@ -300,15 +300,15 @@ Partial Class frmTicketSQL
         Me.Text = "TicketTrack"
         CType(Me.dgSQL, System.ComponentModel.ISupportInitialize).EndInit()
         Me.CopyMenu.ResumeLayout(False)
-        CType(Me.TblTicketBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.DbTicketSQLds, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.ITT00501PTTICKTMSTBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        'CType(Me.TblTicketBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        'CType(Me.DbTicketSQLds, System.ComponentModel.ISupportInitialize).EndInit()
+        'CType(Me.ITT00501PTTICKTMSTBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
     Friend WithEvents dgSQL As System.Windows.Forms.DataGridView
-    Friend WithEvents TblTicketBindingSource As System.Windows.Forms.BindingSource
+    'Friend WithEvents TblTicketBindingSource As System.Windows.Forms.BindingSource
     Friend WithEvents cmbView As System.Windows.Forms.ComboBox
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents CopyMenu As System.Windows.Forms.ContextMenuStrip
@@ -316,11 +316,11 @@ Partial Class frmTicketSQL
     Friend WithEvents time_track As System.Windows.Forms.Timer
     Friend WithEvents mnuDelete As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents btnRefresh As System.Windows.Forms.Button
-    Friend WithEvents ITT00501_PT_TICKT_MSTTableAdapter As TicketTrack.dbTicketSQLdsTableAdapters.ITT00501_PT_TICKT_MSTTableAdapter
-    Friend WithEvents DbTicketSQLds As TicketTrack.dbTicketSQLds
-    Friend WithEvents TableAdapterManager As TicketTrack.dbTicketSQLdsTableAdapters.TableAdapterManager
+    'Friend WithEvents ITT00501_PT_TICKT_MSTTableAdapter As TicketTrack.dbTicketSQLdsTableAdapters.ITT00501_PT_TICKT_MSTTableAdapter
+    'Friend WithEvents DbTicketSQLds As TicketTrack.dbTicketSQLds
+    'Friend WithEvents TableAdapterManager As TicketTrack.dbTicketSQLdsTableAdapters.TableAdapterManager
     Friend WithEvents txtRecordCt As System.Windows.Forms.TextBox
-    Friend WithEvents ITT00501PTTICKTMSTBindingSource As System.Windows.Forms.BindingSource
+    'Friend WithEvents ITT00501PTTICKTMSTBindingSource As System.Windows.Forms.BindingSource
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents INCDNTIDDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn

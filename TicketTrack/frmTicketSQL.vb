@@ -51,7 +51,7 @@ Public Class frmTicketSQL
             Me.WindowState = My.Settings.frmTicketSQL_windowstate
 
             'TODO: This line of code loads data into the 'DbTicketSQLds.ITT00501_PT_TICKT_MST' table. You can move, or remove it, as needed.
-            Me.ITT00501_PT_TICKT_MSTTableAdapter.ITP00501_PT_TICKT_CHK_CMPLT_GET(Me.DbTicketSQLds.ITT00501_PT_TICKT_MST, False, False)
+            'Me.ITT00501_PT_TICKT_MSTTableAdapter.ITP00501_PT_TICKT_CHK_CMPLT_GET(Me.DbTicketSQLds.ITT00501_PT_TICKT_MST, False, False)
 
             Me.dgSQL.Columns(0).ReadOnly = True
             Me.dgSQL.Item(0, Me.dgSQL.NewRowIndex).ReadOnly = False
@@ -105,33 +105,33 @@ Public Class frmTicketSQL
 
                     Me.dgSQL.CurrentRow.Cells.Item(5).Value = IIf(Me.dgSQL.CurrentRow.Cells.Item(6).Value = True, False, Me.dgSQL.CurrentRow.Cells.Item(5).Value)
 
-                    If IsNothing(Me.ITT00501_PT_TICKT_MSTTableAdapter.ITP00501_PT_TICKT_GET(Me.dgSQL.CurrentRow.Cells.Item(0).Value.ToString)) = True Then
+                    'If IsNothing(Me.ITT00501_PT_TICKT_MSTTableAdapter.ITP00501_PT_TICKT_GET(Me.dgSQL.CurrentRow.Cells.Item(0).Value.ToString)) = True Then
 
-                        Me.ITT00501_PT_TICKT_MSTTableAdapter.ITP00501_PT_TICKT_INS(Me.dgSQL.CurrentRow.Cells.Item(0).Value.ToString, _
-                                                        Me.dgSQL.CurrentRow.Cells.Item(1).Value.ToString, _
-                                                        Me.dgSQL.CurrentRow.Cells.Item(2).Value.ToString, _
-                                                        Me.dgSQL.CurrentRow.Cells.Item(3).Value.ToString, _
-                                                        Me.dgSQL.CurrentRow.Cells.Item(4).Value.ToString, _
-                                                        Me.dgSQL.CurrentRow.Cells.Item(6).Value, _
-                                                         Me.dgSQL.CurrentRow.Cells.Item(5).Value, _
-                                                        Me.dgSQL.CurrentRow.Cells.Item(7).Value)
+                    '    Me.ITT00501_PT_TICKT_MSTTableAdapter.ITP00501_PT_TICKT_INS(Me.dgSQL.CurrentRow.Cells.Item(0).Value.ToString,
+                    '                                    Me.dgSQL.CurrentRow.Cells.Item(1).Value.ToString,
+                    '                                    Me.dgSQL.CurrentRow.Cells.Item(2).Value.ToString,
+                    '                                    Me.dgSQL.CurrentRow.Cells.Item(3).Value.ToString,
+                    '                                    Me.dgSQL.CurrentRow.Cells.Item(4).Value.ToString,
+                    '                                    Me.dgSQL.CurrentRow.Cells.Item(6).Value,
+                    '                                     Me.dgSQL.CurrentRow.Cells.Item(5).Value,
+                    '                                    Me.dgSQL.CurrentRow.Cells.Item(7).Value)
 
-                    ElseIf IsNothing(Me.ITT00501_PT_TICKT_MSTTableAdapter.ITP00501_PT_TICKT_GET(Me.dgSQL.CurrentRow.Cells.Item(0).Value.ToString)) = False Then
-                        If MsgBox("Are you sure you want to overwrite, " + Me.dgSQL.CurrentRow.Cells.Item(0).Value.ToString + "?", MsgBoxStyle.YesNo, Me.Text) = MsgBoxResult.Yes Then
-                            Me.ITT00501_PT_TICKT_MSTTableAdapter.ITP00501_PT_TICKT_UPD(Me.dgSQL.CurrentRow.Cells.Item(0).Value.ToString, _
-                                                            Me.dgSQL.CurrentRow.Cells.Item(1).Value.ToString, _
-                                                            Me.dgSQL.CurrentRow.Cells.Item(2).Value.ToString, _
-                                                            Me.dgSQL.CurrentRow.Cells.Item(3).Value.ToString, _
-                                                            Me.dgSQL.CurrentRow.Cells.Item(4).Value.ToString, _
-                                                             Me.dgSQL.CurrentRow.Cells.Item(6).Value, _
-                                                             Me.dgSQL.CurrentRow.Cells.Item(5).Value)
-                        End If
+                    'ElseIf IsNothing(Me.ITT00501_PT_TICKT_MSTTableAdapter.ITP00501_PT_TICKT_GET(Me.dgSQL.CurrentRow.Cells.Item(0).Value.ToString)) = False Then
+                    '    If MsgBox("Are you sure you want to overwrite, " + Me.dgSQL.CurrentRow.Cells.Item(0).Value.ToString + "?", MsgBoxStyle.YesNo, Me.Text) = MsgBoxResult.Yes Then
+                    '        Me.ITT00501_PT_TICKT_MSTTableAdapter.ITP00501_PT_TICKT_UPD(Me.dgSQL.CurrentRow.Cells.Item(0).Value.ToString,
+                    '                                        Me.dgSQL.CurrentRow.Cells.Item(1).Value.ToString,
+                    '                                        Me.dgSQL.CurrentRow.Cells.Item(2).Value.ToString,
+                    '                                        Me.dgSQL.CurrentRow.Cells.Item(3).Value.ToString,
+                    '                                        Me.dgSQL.CurrentRow.Cells.Item(4).Value.ToString,
+                    '                                         Me.dgSQL.CurrentRow.Cells.Item(6).Value,
+                    '                                         Me.dgSQL.CurrentRow.Cells.Item(5).Value)
+                    '    End If
 
-                    Else
+                    'Else
 
-                        Me.TableAdapterManager.UpdateAll(Me.DbTicketSQLds)
+                    '    Me.TableAdapterManager.UpdateAll(Me.DbTicketSQLds)
 
-                    End If
+                    'End If
 
                 Else
                     MsgBox("Ticket # cannot be left blank. Please fill out the Ticket #.", MsgBoxStyle.Information, Me.Text)
@@ -139,7 +139,7 @@ Public Class frmTicketSQL
 
                 If cmbView.SelectedItem.ToString = "Open Tickets" Then
 
-                    Me.ITT00501_PT_TICKT_MSTTableAdapter.ITP00501_PT_TICKT_CHK_CMPLT_GET(Me.DbTicketSQLds.ITT00501_PT_TICKT_MST, False, False)
+                    'Me.ITT00501_PT_TICKT_MSTTableAdapter.ITP00501_PT_TICKT_CHK_CMPLT_GET(Me.DbTicketSQLds.ITT00501_PT_TICKT_MST, False, False)
 
                     If Me.dgSQL.NewRowIndex >= 0 Then
                         Me.dgSQL.Columns(0).ReadOnly = True
@@ -149,7 +149,7 @@ Public Class frmTicketSQL
 
                 ElseIf cmbView.SelectedItem.ToString = "Reference Tickets" Then
 
-                    Me.ITT00501_PT_TICKT_MSTTableAdapter.ITP00501_PT_TICKT_CHK_CMPLT_GET(Me.DbTicketSQLds.ITT00501_PT_TICKT_MST, False, True)
+                    'Me.ITT00501_PT_TICKT_MSTTableAdapter.ITP00501_PT_TICKT_CHK_CMPLT_GET(Me.DbTicketSQLds.ITT00501_PT_TICKT_MST, False, True)
 
                     Me.dgSQL.Columns(0).ReadOnly = True
                     Me.dgSQL.Item(0, Me.dgSQL.NewRowIndex).ReadOnly = False
@@ -157,7 +157,7 @@ Public Class frmTicketSQL
 
                 ElseIf cmbView.SelectedItem.ToString = "Completed Tickets" Then
 
-                    Me.ITT00501_PT_TICKT_MSTTableAdapter.ITP00501_PT_TICKT_CHK_CMPLT_GET(Me.DbTicketSQLds.ITT00501_PT_TICKT_MST, True, False)
+                    'Me.ITT00501_PT_TICKT_MSTTableAdapter.ITP00501_PT_TICKT_CHK_CMPLT_GET(Me.DbTicketSQLds.ITT00501_PT_TICKT_MST, True, False)
 
                     Me.dgSQL.Columns(0).ReadOnly = True
                     Me.dgSQL.Item(0, Me.dgSQL.NewRowIndex).ReadOnly = False
@@ -177,12 +177,12 @@ Public Class frmTicketSQL
     Private Sub cmbView_SelectedValueChanged(sender As Object, e As System.EventArgs) Handles cmbView.SelectedValueChanged
         Try
             If Me.dgSQL.IsCurrentRowDirty = True Then
-                Me.TableAdapterManager.UpdateAll(Me.DbTicketSQLds)
+                'Me.TableAdapterManager.UpdateAll(Me.DbTicketSQLds)
             End If
 
             If cmbView.SelectedItem.ToString = "Open Tickets" Then
 
-                Me.ITT00501_PT_TICKT_MSTTableAdapter.ITP00501_PT_TICKT_CHK_CMPLT_GET(Me.DbTicketSQLds.ITT00501_PT_TICKT_MST, False, False)
+                'Me.ITT00501_PT_TICKT_MSTTableAdapter.ITP00501_PT_TICKT_CHK_CMPLT_GET(Me.DbTicketSQLds.ITT00501_PT_TICKT_MST, False, False)
 
                 If Me.dgSQL.NewRowIndex >= 0 Then
                     Me.dgSQL.Columns(0).ReadOnly = True
@@ -196,7 +196,7 @@ Public Class frmTicketSQL
 
             ElseIf cmbView.SelectedItem.ToString = "Reference Tickets" Then
 
-                Me.ITT00501_PT_TICKT_MSTTableAdapter.ITP00501_PT_TICKT_CHK_CMPLT_GET(Me.DbTicketSQLds.ITT00501_PT_TICKT_MST, False, True)
+                'Me.ITT00501_PT_TICKT_MSTTableAdapter.ITP00501_PT_TICKT_CHK_CMPLT_GET(Me.DbTicketSQLds.ITT00501_PT_TICKT_MST, False, True)
 
                 Me.dgSQL.Columns(0).ReadOnly = True
                 Me.dgSQL.Item(0, Me.dgSQL.NewRowIndex).ReadOnly = False
@@ -210,7 +210,7 @@ Public Class frmTicketSQL
 
             ElseIf cmbView.SelectedItem.ToString = "Completed Tickets" Then
 
-                Me.ITT00501_PT_TICKT_MSTTableAdapter.ITP00501_PT_TICKT_CHK_CMPLT_GET(Me.DbTicketSQLds.ITT00501_PT_TICKT_MST, True, False)
+                'Me.ITT00501_PT_TICKT_MSTTableAdapter.ITP00501_PT_TICKT_CHK_CMPLT_GET(Me.DbTicketSQLds.ITT00501_PT_TICKT_MST, True, False)
 
                 Me.dgSQL.Columns(0).ReadOnly = True
                 Me.dgSQL.Item(0, Me.dgSQL.NewRowIndex).ReadOnly = False
@@ -249,21 +249,21 @@ Public Class frmTicketSQL
     Private Sub mnuDelete_Click(sender As Object, e As System.EventArgs) Handles mnuDelete.Click
         Try
             If MsgBox("Are you sure you want to delete, " + Me.dgSQL.CurrentRow.Cells.Item(0).Value.ToString + "?", MsgBoxStyle.YesNo) = MsgBoxResult.Yes Then
-                Me.ITT00501_PT_TICKT_MSTTableAdapter.ITP00501_PT_TICKT_DEL(Me.dgSQL.CurrentRow.Cells.Item(0).Value.ToString)
+                'Me.ITT00501_PT_TICKT_MSTTableAdapter.ITP00501_PT_TICKT_DEL(Me.dgSQL.CurrentRow.Cells.Item(0).Value.ToString)
 
-                If cmbView.SelectedItem.ToString = "Open Tickets" Then
+                'If cmbView.SelectedItem.ToString = "Open Tickets" Then
 
-                    Me.ITT00501_PT_TICKT_MSTTableAdapter.ITP00501_PT_TICKT_CHK_CMPLT_GET(Me.DbTicketSQLds.ITT00501_PT_TICKT_MST, False, False)
+                '    Me.ITT00501_PT_TICKT_MSTTableAdapter.ITP00501_PT_TICKT_CHK_CMPLT_GET(Me.DbTicketSQLds.ITT00501_PT_TICKT_MST, False, False)
 
-                ElseIf cmbView.SelectedItem.ToString = "Reference Tickets" Then
+                'ElseIf cmbView.SelectedItem.ToString = "Reference Tickets" Then
 
-                    Me.ITT00501_PT_TICKT_MSTTableAdapter.ITP00501_PT_TICKT_CHK_CMPLT_GET(Me.DbTicketSQLds.ITT00501_PT_TICKT_MST, False, True)
+                '    Me.ITT00501_PT_TICKT_MSTTableAdapter.ITP00501_PT_TICKT_CHK_CMPLT_GET(Me.DbTicketSQLds.ITT00501_PT_TICKT_MST, False, True)
 
-                ElseIf cmbView.SelectedItem.ToString = "Completed Tickets" Then
+                'ElseIf cmbView.SelectedItem.ToString = "Completed Tickets" Then
 
-                    Me.ITT00501_PT_TICKT_MSTTableAdapter.ITP00501_PT_TICKT_CHK_CMPLT_GET(Me.DbTicketSQLds.ITT00501_PT_TICKT_MST, True, False)
+                '    Me.ITT00501_PT_TICKT_MSTTableAdapter.ITP00501_PT_TICKT_CHK_CMPLT_GET(Me.DbTicketSQLds.ITT00501_PT_TICKT_MST, True, False)
 
-                End If
+                'End If
 
                 Me.dgSQL.Columns(0).ReadOnly = True
                 Me.dgSQL.Item(0, Me.dgSQL.NewRowIndex).ReadOnly = False
@@ -285,7 +285,7 @@ Public Class frmTicketSQL
 
             If Timer = Me.time_track.Interval Then
 
-                Me.txtRecordCt.Text = Me.ITT00501_PT_TICKT_MSTTableAdapter.CountQry(False, False)
+                'Me.txtRecordCt.Text = Me.ITT00501_PT_TICKT_MSTTableAdapter.CountQry(False, False)
 
                 If (Me.dgSQL.RowCount - 1) <> CInt(Me.txtRecordCt.Text) Then
 
@@ -311,12 +311,12 @@ Public Class frmTicketSQL
     Private Sub btnRefresh_Click(sender As Object, e As System.EventArgs) Handles btnRefresh.Click
         Try
             If Me.dgSQL.IsCurrentRowDirty = True Then
-                Me.TableAdapterManager.UpdateAll(Me.DbTicketSQLds)
+                'Me.TableAdapterManager.UpdateAll(Me.DbTicketSQLds)
             End If
 
             If cmbView.SelectedItem.ToString = "Open Tickets" Then
 
-                Me.ITT00501_PT_TICKT_MSTTableAdapter.ITP00501_PT_TICKT_CHK_CMPLT_GET(Me.DbTicketSQLds.ITT00501_PT_TICKT_MST, False, False)
+                'Me.ITT00501_PT_TICKT_MSTTableAdapter.ITP00501_PT_TICKT_CHK_CMPLT_GET(Me.DbTicketSQLds.ITT00501_PT_TICKT_MST, False, False)
 
                 If Me.dgSQL.NewRowIndex >= 0 Then
                     Me.dgSQL.Columns(0).ReadOnly = True
@@ -326,7 +326,7 @@ Public Class frmTicketSQL
 
             ElseIf cmbView.SelectedItem.ToString = "Reference Tickets" Then
 
-                Me.ITT00501_PT_TICKT_MSTTableAdapter.ITP00501_PT_TICKT_CHK_CMPLT_GET(Me.DbTicketSQLds.ITT00501_PT_TICKT_MST, False, True)
+                'Me.ITT00501_PT_TICKT_MSTTableAdapter.ITP00501_PT_TICKT_CHK_CMPLT_GET(Me.DbTicketSQLds.ITT00501_PT_TICKT_MST, False, True)
 
                 Me.dgSQL.Columns(0).ReadOnly = True
                 Me.dgSQL.Item(0, Me.dgSQL.NewRowIndex).ReadOnly = False
@@ -334,7 +334,7 @@ Public Class frmTicketSQL
 
             ElseIf cmbView.SelectedItem.ToString = "Completed Tickets" Then
 
-                Me.ITT00501_PT_TICKT_MSTTableAdapter.ITP00501_PT_TICKT_CHK_CMPLT_GET(Me.DbTicketSQLds.ITT00501_PT_TICKT_MST, True, False)
+                'Me.ITT00501_PT_TICKT_MSTTableAdapter.ITP00501_PT_TICKT_CHK_CMPLT_GET(Me.DbTicketSQLds.ITT00501_PT_TICKT_MST, True, False)
 
                 Me.dgSQL.Columns(0).ReadOnly = True
                 Me.dgSQL.Item(0, Me.dgSQL.NewRowIndex).ReadOnly = False
